@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .flex-end {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .space-between {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row mb-3">
+            <div class="col-md-8">
+                <h1>Leaderboard</h1>
+            </div>
+            <div class="col-md-4 flex-end">
+                <input type="text" id="searchInput" class="form-control" placeholder="Search by name or score">
+            </div>
+        </div>
+        <table class="table table-hover" id="leaderboardTable">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">User</th>
+                    <th scope="col">Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Results will be inserted here -->
+            </tbody>
+        </table>
+        <div class="row mt-4">
+            <div class="col-6">
+                <button id="prevButton" class="btn btn-secondary">Previous</button>
+            </div>
+            <div class="col-6 text-right">
+                <button id="nextButton" class="btn btn-secondary">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
